@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="index.js"></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <nav class="navbar">
+      <div class="logo-list">
+        <a href="#">
+          <button class="menu-icon icon">
+            <img src="./images/icon-menu.svg" alt="Menu button" />
+          </button>
+          <img
+            src="./images/logo.svg"
+            alt="Sneaker Company Logo"
+            class="company-logo"
+          />
+        </a>
+        <ul class="nav-list">
+          <button class="close-icon icon hidden">
+            <img src="./images/icon-close.svg" alt="Close button" />
+          </button>
+          <li><a href="#" class="navbar-links">Collections</a></li>
+          <li><a href="#" class="navbar-links">Men</a></li>
+          <li><a href="#" class="navbar-links">Women</a></li>
+          <li><a href="#" class="navbar-links">About</a></li>
+          <li><a href="#" class="navbar-links">Contact</a></li>
+        </ul>
+      </div>
+      <div class="user-container">
+        <button class="cart-btn">
+          <img src="./images/icon-cart.svg" alt="Cart icon" />
+        </button>
+        <button class="profile-btn">
+          <img
+            src="./images/image-avatar.png"
+            alt="User Profile Picture"
+            class="user-picture"
+          />
+        </button>
+      </div>
+    </nav>
+    <article>
+      <div class="user-cart hidden">
+        <div class="heading-cart-container">
+          <h1 class="cart-heading">Cart</h1>
+        </div>
+        <hr class="border-cart" />
+        <div class="user-products">
+          <!-- <div class="product-details">
+            <img
+              class="product-added-img"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="Product thumbnail"
+            />
+            <div class="price-description">
+              <p class="collection-title">Fall Limited Edition Sneakers</p>
+              <p>
+                $125.00 x <span class="bought-amount">3</span>
+                <span class="final-price">$375.00</span>
+              </p>
+            </div>
+            <img
+              src="./images/icon-delete.svg"
+              alt="Delete icon"
+              class="delete-icon"
+            />
+          </div>
+          <button class="checkout-btn">Checkout</button> -->
+          <p class="empty-cart">Your cart is empty.</p>
+        </div>
+      </div>
+      <div class="images-container">
+        <button class="prev-btn">
+          <img src="./images/icon-previous.svg" alt="Previous slide button" />
+        </button>
+        <button class="next-btn">
+          <img src="./images/icon-next.svg" alt="Next slide button" />
+        </button>
+        <img
+          class="active-slide"
+          src="./images/image-product-1.jpg"
+          alt="first slide of product"
+        />
+        <div class="thumbnails-container">
+          <button class="picture-slide selected-picture" data-slide="1">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="thumbnail 1"
+            />
+          </button>
+          <button class="picture-slide" data-slide="2">
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="thumbnail 2"
+            />
+          </button>
+          <button class="picture-slide" data-slide="3">
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="thumbnail 3"
+            />
+          </button>
+          <button class="picture-slide" data-slide="4">
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="thumbnail 4"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="description-container">
+        <p class="subheading">Sneaker Company</p>
+        <h1 class="primary-heading">Fall Limited Edition Sneakers</h1>
+        <p class="description-paragraph">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-container">
+          <span class="new-price"> $125.00</span>
+          <span class="promotion">50% </span>
+        </div>
+        <span class="old-price"> $250.00</span>
+        <div class="buttons-container">
+          <div class="sign-container">
+            <button class="minus-btn">
+              <img src="./images/icon-minus.svg" alt="minus button" />
+            </button>
+            <span class="product-amount">0</span>
+            <button class="plus-btn">
+              <img src="./images/icon-plus.svg" alt="plus button" />
+            </button>
+          </div>
+
+          <button class="add-btn">
+            <img src="./images/icon-cart white.svg" alt="Cart icon" /> Add to
+            cart
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Boris Matenco</a>.
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
